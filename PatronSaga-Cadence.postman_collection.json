@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "32aaa882-a155-4170-8eda-be80663c7047",
+		"name": "PatronSaga-Cadence",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5354069"
+	},
+	"item": [
+		{
+			"name": "Async-Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": \"customer_12345\",\r\n    \"amount\": 3000\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/async",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"async"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
